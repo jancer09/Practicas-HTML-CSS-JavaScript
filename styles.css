@@ -1,0 +1,100 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Fondo */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #0F172A; /* fondo azul oscuro */
+    font-family: Courier, monospace;
+}
+
+/* Contenedor principal */
+.password-container {
+    background-color: #020617;
+    padding: 30px;
+    border-radius: 12px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Título */
+.password-container h1 {
+    color: #E5E7EB;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+/* Input + icono */
+.input-container {
+    display: flex;
+    align-items: center;
+    background-color: #020617;
+    border: 1px solid #3B82F6;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: #E5E7EB;
+    font-size: 14px;
+    outline: none;
+}
+
+.input::placeholder {
+    color: #9CA3AF;
+}
+
+.input-container i {
+    color: #3B82F6;
+    cursor: pointer;
+}
+
+/* Botón */
+.btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #3B82F6;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #2563EB;
+}
+
+/* Alerta */
+.alert-container {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #22C55E;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.alert-container.active {
+    opacity: 1;
+}
+
